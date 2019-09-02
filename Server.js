@@ -2,8 +2,6 @@
 const express = require('express');
 // Used For Tagging The hbs File Formates. I mea {{}} Tag.
 const hbs = require('hbs');
-// For Heroku
-const Port = process.env.Port || 3000;
 
 // Introduces The Application
 var app = express();
@@ -69,7 +67,7 @@ app.get('/About', (req, res) =>
 //#endregion
 
 // Server Listens On Port 3000
-app.listen(Port, () =>
+app.listen(3000, () =>
 {
-    console.log(`Server is up on port ${Port}.`);
+    console.log('Server is up on port 3000.');
 });
