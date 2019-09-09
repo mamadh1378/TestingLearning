@@ -23,15 +23,15 @@ hbs.registerHelper('Upper', (Text) =>
 
 app.use((req, res, next) =>
 {
-    console.log('before');
+    //console.log('before');
     next();
-    console.log('Next');
+    //console.log('Next');
 });
 
-app.use((req, res, next) =>
+/*app.use((req, res, next) =>
 {
     res.render('Maintain.hbs');
-});
+});*/
 
 //#region First Method
 // (( First Method ))
